@@ -73,3 +73,19 @@ def handle_client(conn, addr):
     print(f"[DISCONNECTED] {addr} disconnected")
     conn.close()
 
+def main():
+    print("[STARTING] Server po starton!")
+    server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    server.bind(ADDR)
+    server.listen()
+    print(f"[LISTENING] Serveri eshte duke degjuar ne {IP}:{PORT}.\n")
+
+    while True:
+        conn, addr = server.accept()
+        thread = threading.Thread(target=handle_client, args=(conn, addr))
+        thread.start()
+        print(f"Numri i klienteve aktive {threading.active_count() - 1}")
+
+if __name__ == "__main__":
+    main()
+
