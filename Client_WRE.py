@@ -47,8 +47,7 @@ def main():
 
    
 
-    print("Shkyqja nga serveri.")
-    client.close()
+   
 
 if __name__ == "__main__":
     main()
