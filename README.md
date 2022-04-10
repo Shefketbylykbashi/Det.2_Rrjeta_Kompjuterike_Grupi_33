@@ -14,3 +14,9 @@ merr IP addresen e paisjes dhe ka privilegjin:
 -klient 2 (Client_R) i cili ekzekutohet ne cilendo paisje dhe nevojitet ip addresa 
 e paisjes ne te cilen eshte duke u ekzekutuar serveri dhe ka privilegjin:
 -->te lexoje filet te cilat i permban server_data
+
+Komandat:
+HELP -->Shfaqe menyne
+UPLOAD client_data/test1.txt --> bene upload ne server_data filen test1.txt
+DELETE test1.txt --> fshien file-n nga server_data
+LOGOUT -->Shkyqet nga serveri
